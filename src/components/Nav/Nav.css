@@ -1,0 +1,2 @@
+.navbar-brand { color: var(--brand) !important; font-weight:700; }
+.nav-link.active { font-weight:600; color:var(--brand) !important; }

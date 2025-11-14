@@ -1,0 +1,32 @@
+:root{
+  --primary:#0d6efd;
+  --brand:#00a859;
+  --bg:#f7f8fa;
+}
+
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color:#222;
+}
+
+/* Nav */
+.navbar-brand{ font-weight:700; color:var(--brand) !important; }
+
+/* Layout */
+.container-main { padding-top:80px; }
+
+/* Cards */
+.card { border-radius:12px; }
+.card img { object-fit:cover; }
+
+/* ItemList grid */
+.product-grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); gap:18px; }
+
+/* Buttons */
+.btn-primary { background: var(--primary); border:none; }
+.btn-primary:hover { filter:brightness(.95); }
+
+/* Small helpers */
+.text-muted-small { color:#6c757d; font-size:.9rem; }
