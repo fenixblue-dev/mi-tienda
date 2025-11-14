@@ -62,3 +62,19 @@ export default function Cart() {
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header closeButton>
           <Modal.Title>Confirmar Compra</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>¿Deseas finalizar la compra por un total de ${totalPrice}?</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowModal(false)}>
+            Cancelar
+          </Button>
+          <Button variant="success" onClick={confirmCheckout}>
+            Confirmar
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  );
+}
