@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { fetchProductByIdApi } from "../../services/productsApi";
+import { fetchProductById} from "../../services/productsApi";
 import ItemDetail from "../ItemDetail/ItemDetail";
 
 export default function ItemDetailContainer() {
@@ -11,7 +11,7 @@ export default function ItemDetailContainer() {
   useEffect(() => {
     let mounted = true;
     (async () => {
-      const p = await fetchProductByIdApi(id);
+      const p = await fetchProductById(id);
       if (mounted) setProduct(p);
       setLoading(false);
     })();
